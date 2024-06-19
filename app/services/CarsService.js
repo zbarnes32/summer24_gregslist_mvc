@@ -28,6 +28,8 @@ class CarsService {
 
     console.log('got the car index dawg', carIndex);
     cars.splice(carIndex, 1)
+
+    this.saveCars()
   }
 
   saveCars() {
