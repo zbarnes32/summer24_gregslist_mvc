@@ -12,6 +12,12 @@
   object-position: center;
 }
 
+.cool-form {
+  border-radius: 15px;
+  background-color: rgb(215, 212, 226);
+  border: 3px solid black;
+}
+
 
 @media screen and (max-width: 767.8px) {
   .car-card img {
