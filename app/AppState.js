@@ -1,4 +1,5 @@
 import { Car } from './models/Car.js'
+import { House } from './models/House.js'
 import { EventEmitter } from './utils/EventEmitter.js'
 import { createObservableProxy } from './utils/ObservableProxy.js'
 
@@ -62,6 +63,19 @@ class ObservableAppState extends EventEmitter {
       fuelType: 'oats',
       description: 'RIP in the jalopy jungle',
       color: '#8c9197'
+    }),
+  ]
+
+  houses = [
+    new House ({
+      address: '123 Main Street, Boise, ID, 83709',
+      year: 2000,
+      bedrooms: 3,
+      bathrooms: 2,
+      sqft: 1800,
+      price: 450000,
+      description: 'Cute house, perfect for a young family.',
+      imgUrl: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG91c2V8ZW58MHx8MHx8fDA%3D'
     }),
   ]
 }
