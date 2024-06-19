@@ -5,11 +5,12 @@ import { setHTML } from "../utils/Writer.js";
 
 export class CarsController {
   constructor() {
+    console.log('Cars Controller is loaded!');
     // 💂---------> cars
     AppState.on('cars', this.drawCars)
 
-    console.log('Cars Controller is loaded!');
-    this.drawCars()
+    // brings in cars from local storage, triggers listener above
+    carsService.loadCars()
   }
 
   drawCars() {
