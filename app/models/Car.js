@@ -1,5 +1,4 @@
 export class Car {
-  // constructor(make, model, year, imgURL, mileage, price, color, description, runs, fuelType, hasCleanTitle) {
   /**
    * @param {{ make: string; model: string; year: number; imgURL: string; mileage: number; price: number; color: string; description: string; runs: boolean; fuelType: string; hasCleanTitle: boolean; }} data
    */
