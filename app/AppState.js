@@ -74,9 +74,30 @@ class ObservableAppState extends EventEmitter {
       bathrooms: 2,
       sqft: 1800,
       price: 450000,
-      description: 'Cute house, perfect for a young family.',
+      description: 'Cute house, great for a young family.',
       imgUrl: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aG91c2V8ZW58MHx8MHx8fDA%3D'
     }),
+    new House ({
+      address: '987 Willow Avenue, Meridian, ID, 83646',
+      year: 2024,
+      bedrooms: 4,
+      bathrooms: 3,
+      sqft: 3000,
+      price: 750000,
+      description: 'The perfect house for the perfect family.',
+      imgUrl: 'https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvdXNlfGVufDB8fDB8fHww'
+    }),
+    new House ({
+      address: '867 FiveThreeONine Court, Boise, ID, 83703',
+      year: 1980,
+      bedrooms: 2,
+      bathrooms: 2,
+      sqft: 1000,
+      price: 250000,
+      description: 'Great starter home for a 1st time home buyer. May need a little TLC.',
+      imgUrl: 'https://images.unsplash.com/photo-1616555670626-09496d2eed9e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG9sZCUyMGhvdXNlfGVufDB8fDB8fHww'
+    })
+      
   ]
 }
 
