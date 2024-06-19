@@ -30,5 +30,8 @@ export class CarsController {
     // REVIEW DO NOT WRITE ADDITIONAL CODE BEYOND THIS POINT UNTIL YOUR DATA OBJECT LOOKS CORRECT
     console.log('here is the car data from the form!', carData);
     carsService.createCar(carData)
+
+    // @ts-ignore
+    form.reset()
   }
 }
