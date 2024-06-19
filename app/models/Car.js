@@ -1,8 +1,11 @@
+import { generateId } from "../utils/GenerateId.js"
+
 export class Car {
   /**
    * @param {{ make: string; model: string; year: number; imgURL: string; mileage: number; price: number; color: string; description: string; runs: boolean; fuelType: string; hasCleanTitle: boolean; }} data
    */
   constructor(data) {
+    this.id = generateId()
     this.make = data.make
     this.model = data.model
     this.year = data.year
@@ -35,7 +38,7 @@ export class Car {
                 ${this.carRunsIcon}
               </h5>
               <div class="text-end">
-                <button class="btn btn-success" type="button">Notify Seller</button>
+                <button onclick="app.CarsController.destroyCar('${this.id}')" class="btn btn-outline-danger" type="button">Delete Car</button>
               </div>
             </div>
           </div>

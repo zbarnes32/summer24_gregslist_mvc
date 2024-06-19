@@ -35,4 +35,17 @@ export class CarsController {
     // @ts-ignore
     form.reset()
   }
+
+  destroyCar(carId) {
+    // if they click ok, this returns true, otherwise returns false
+    const wantsToDelete = window.confirm('Are you sure you want to delete that car?')
+
+    // if (wantsToDelete == false) {
+    if (!wantsToDelete) {
+      return
+    }
+
+    carsService.destroyCar(carId)
+
+  }
 }
