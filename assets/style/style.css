@@ -11,3 +11,10 @@
   object-fit: cover;
   object-position: center;
 }
+
+
+@media screen and (max-width: 767.8px) {
+  .car-card img {
+    border-radius: 15px 15px 0 0;
+  }
+}
