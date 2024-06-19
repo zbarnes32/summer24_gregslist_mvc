@@ -13,4 +13,9 @@ export class CarsController {
     cars.forEach((car) => innerHTMLString += car.cardHTMLTemplate)
     setHTML('carListings', innerHTMLString)
   }
+
+  createCar() {
+    event.preventDefault() // do not refresh the page!
+    console.log('creating car!');
+  }
 }

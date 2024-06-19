@@ -11,7 +11,7 @@
   <section class="row my-3">
     <div class="col-12">
       <div class="p-3 cool-form">
-        <form>
+        <form onsubmit="app.CarsController.createCar()">
           <div class="mb-3">
             <label for="make" class="form-label">Car Make</label>
             <input type="text" class="form-control" id="make" placeholder="Car Make..." required maxlength="100">
@@ -26,7 +26,7 @@
           </div>
           <div class="mb-3">
             <label for="mileage" class="form-label">Car Mileage</label>
-            <input type="number" class="form-control" id="mileage" placeholder="2025" required min="1908" max="2026">
+            <input type="number" class="form-control" id="mileage" placeholder="0" required min="0" max="400000">
           </div>
           <div class="mb-3">
             <label for="price" class="form-label">Car Price</label>
