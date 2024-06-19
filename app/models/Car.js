@@ -20,7 +20,7 @@ export class Car {
   get cardHTMLTemplate() {
     return `
     <div class="col-12 mb-3">
-      <div class="car-card shadow">
+      <div class="car-card shadow" style="border-color: ${this.color};">
         <div class="row">
           <div class="col-12 col-md-4 ">
             <img class="img-fluid bg-dark" src="${this.imgURL}" alt="${this.make} ${this.model}">
