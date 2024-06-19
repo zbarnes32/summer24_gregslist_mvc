@@ -23,21 +23,17 @@ export class Car {
       <div class="car-card shadow">
         <div class="row">
           <div class="col-12 col-md-4 ">
-            <img class="img-fluid bg-dark"
-              src="https://images.unsplash.com/photo-1552615526-40e47a79f9d7?q=80&w=2176&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Mazda Miata">
+            <img class="img-fluid bg-dark" src="${this.imgURL}" alt="${this.make} ${this.model}">
           </div>
           <div class="col-12 col-md-8">
             <div class="p-3">
-              <h2>1997 Mazda Miata</h2>
-              <h2>$6000</h2>
-              <h3>2000 miles Clean Title</h3>
-              <h4>Runs on gasoline</h4>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed veritatis ullam mollitia sit perspiciatis
-                totam eligendi commodi, debitis earum alias!</p>
+              <h2>${this.year} ${this.make} ${this.model}</h2>
+              <h2>$${this.price}</h2>
+              <h3>${this.mileage} miles ${this.hasCleanTitle ? 'Clean Title' : 'Not Clean Title'}</h3>
+              <h4>Runs on ${this.fuelType}</h4>
+              <p>${this.description}</p>
               <h5>
-                <i class="mdi mdi-car-off" title="The car is broken"></i>
-                <i class="mdi mdi-car" title="Runs great"></i>
+                ${this.carRunsIcon}
               </h5>
               <div class="text-end">
                 <button class="btn btn-success" type="button">Notify Seller</button>
@@ -48,6 +44,15 @@ export class Car {
       </div>
     </div>
     `
+  }
+
+  get carRunsIcon() {
+    if (this.runs) {
+      return '<i class="mdi mdi-car" title="Runs great"></i>'
+    }
+
+    // else
+    return '<i class="mdi mdi-car-off" title="The car is broken"></i>'
   }
 
 }

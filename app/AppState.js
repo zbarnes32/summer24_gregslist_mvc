@@ -58,7 +58,7 @@ class ObservableAppState extends EventEmitter {
       price: 5000,
       mileage: 280000,
       runs: false,
-      hasCleanTitle: true,
+      hasCleanTitle: false,
       fuelType: 'oats',
       description: 'RIP in the jalopy jungle',
       color: '#8c9197'
