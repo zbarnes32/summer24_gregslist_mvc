@@ -15,6 +15,6 @@ export const router = new Router([
   },
   {
     path: '#/cars',
-    view: '<h1>Cars page!</h1>'
+    view: 'app/views/CarsView.html'
   }
 ])
