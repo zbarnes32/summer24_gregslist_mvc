@@ -29,6 +29,7 @@ class CarsService {
     console.log('got the car index dawg', carIndex);
     cars.splice(carIndex, 1)
 
+    // TEST DELETE BEFORE DOING THIS
     this.saveCars()
   }
 

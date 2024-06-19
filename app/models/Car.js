@@ -6,6 +6,7 @@ export class Car {
    */
   constructor(data) {
     this.id = generateId()
+    this.dateListed = new Date()
     this.make = data.make
     this.model = data.model
     this.year = data.year
@@ -31,6 +32,7 @@ export class Car {
             <div class="p-3">
               <h2>${this.year} ${this.make} ${this.model}</h2>
               <h2>$${this.price}</h2>
+              <h3>Listed on ${this.formattedListedDate} at ${this.formattedListedTime}</h3>
               <h3>${this.mileage} miles ${this.hasCleanTitle ? 'Clean Title' : 'Not Clean Title'}</h3>
               <h4>Runs on ${this.fuelType}</h4>
               <p>${this.description}</p>
@@ -55,6 +57,13 @@ export class Car {
 
     // else
     return '<i class="mdi mdi-car-off" title="The car is broken"></i>'
+  }
+
+  get formattedListedDate() {
+    return this.dateListed.toLocaleDateString()
+  }
+  get formattedListedTime() {
+    return this.dateListed.toLocaleTimeString()
   }
 
 }
