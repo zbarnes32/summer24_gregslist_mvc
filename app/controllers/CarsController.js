@@ -1,4 +1,5 @@
 import { AppState } from "../AppState.js";
+import { getFormData } from "../utils/FormHandler.js";
 import { setHTML } from "../utils/Writer.js";
 
 export class CarsController {
@@ -16,6 +17,10 @@ export class CarsController {
 
   createCar() {
     event.preventDefault() // do not refresh the page!
-    console.log('creating car!');
+    const form = event.target
+    console.log('got the form', form);
+    const carData = getFormData(form)
+    // REVIEW DO NOT WRITE ADDITIONAL CODE BEYOND THIS POINT UNTIL YOUR DATA OBJECT LOOKS CORRECT
+    console.log('here is the car data from the form!', carData);
   }
 }
