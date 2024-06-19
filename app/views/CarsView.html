@@ -38,7 +38,7 @@
           </div>
           <div class="mb-3">
             <label for="imgURL" class="form-label">Car ImgURL</label>
-            <input type="url" class="form-control" id="imgURL" required maxlength="2000" name="imgUrl">
+            <input type="url" class="form-control" id="imgURL" required maxlength="2000" name="imgURL">
           </div>
           <div class="mb-3">
             <label for="description" class="form-label">Car Description</label>
@@ -46,8 +46,8 @@
           </div>
           <div class="mb-3">
             <label for="fuelType">Type of Fuel</label>
-            <select class="form-select" id="fuelType" name="fuelType">
-              <option selected>Open this select menu</option>
+            <select class="form-select" id="fuelType" name="fuelType" required>
+              <option selected disabled value="">Open this select menu</option>
               <option value="gasoline">Gasoline</option>
               <option value="diesel">Diesel</option>
               <option value="electricity">Electricity</option>
