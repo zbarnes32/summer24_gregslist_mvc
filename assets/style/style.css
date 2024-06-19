@@ -1,1 +1,13 @@
 /* BASIC STYLES HERE */
+
+.car-card {
+  border: 3px solid black;
+  border-radius: 15px;
+}
+
+.car-card img {
+  border-radius: 15px 0 0 15px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
