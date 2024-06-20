@@ -1,10 +1,10 @@
-<h1 class="text-center">Houses For Sale</h1>
+<h1 class="text-center mt-5">Houses For Sale</h1>
 
 <section class="container-fluid">
     <div class="row my-3">
         <div class="col-12">
-            <div class="p-3">
-                <form>
+            <div class="p-3 cool-form">
+                <form onsubmit="app.HousesController.createHouse()">
                     <div class="mb-3">
                         <div class="mb-3">
                             <!--  <label for="address" class="form-label">Property's Address:</label> -->
@@ -37,6 +37,9 @@
                         <div class="mb-3">
                             <!-- <label for="imgUrl" class="form-label">Image URL:</label> -->
                             <input type="url" class="form-control" id="imgUrl" placeholder="Enter your image's url in order to add picture." maxlength="2000" name="imgUrl">
+                        </div>
+                        <div class="text-end">
+                            <button class="btn btn-outline-success" type="submit">Submit</button>
                         </div>
                     </div>
                 </form>
